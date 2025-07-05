@@ -63,6 +63,37 @@ export default function LandingPage() {
         <div className="mt-8">
           <LanguageSelector />
         </div>
+
+        {/* Demo Navigation */}
+        <div className="mt-12 p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+          <h3 className="text-white text-lg font-semibold mb-4">Explore All Pages (Demo)</h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm">
+            <Link href="/auth" className="bg-white/20 text-white px-3 py-2 rounded-lg hover:bg-white/30 transition-all text-center">
+              Login
+            </Link>
+            <Link href="/discover" className="bg-white/20 text-white px-3 py-2 rounded-lg hover:bg-white/30 transition-all text-center">
+              Discover
+            </Link>
+            <Link href="/matches" className="bg-white/20 text-white px-3 py-2 rounded-lg hover:bg-white/30 transition-all text-center">
+              Matches
+            </Link>
+            <Link href="/chat" className="bg-white/20 text-white px-3 py-2 rounded-lg hover:bg-white/30 transition-all text-center">
+              Chat
+            </Link>
+            <Link href="/profile" className="bg-white/20 text-white px-3 py-2 rounded-lg hover:bg-white/30 transition-all text-center">
+              Profile
+            </Link>
+            <Link href="/premium" className="bg-white/20 text-white px-3 py-2 rounded-lg hover:bg-white/30 transition-all text-center">
+              Premium
+            </Link>
+            <Link href="/settings" className="bg-white/20 text-white px-3 py-2 rounded-lg hover:bg-white/30 transition-all text-center">
+              Settings
+            </Link>
+            <Link href="/profile-setup" className="bg-white/20 text-white px-3 py-2 rounded-lg hover:bg-white/30 transition-all text-center">
+              Setup
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -56,9 +56,8 @@ app.use((req, res, next) => {
 
   const port = 5000;
 
-  // هنا التعديل: حذف host و reusePort لتفادي الخطأ في Windows
+  // استمع للمنفذ فقط بدون تحديد host أو reusePort
   server.listen(port, () => {
     log(`serving on port ${port}`);
   });
 })();
-
